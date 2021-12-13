@@ -38,6 +38,7 @@ self.addEventListener('activate', function (e){
                 return key.indexOf(APP_PREFIX);
             });
             cacheKeepList.push(CACHE_NAME);
+            // Removes caches that aren't in the array
             return Promise.all(keyList.map(function (key, i){
                 if (cacheKeepList.indexOf(key) === -1){
                     console.log('deleteing cache' + keyList[i]);
