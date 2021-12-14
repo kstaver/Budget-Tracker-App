@@ -32,5 +32,41 @@ function saveRecord(record){
 };
 
 function uploadTransaction(){
+    // Open new transaction with read/write permissions
     const transaction = db.transaction(['new_transaction'], 'readwrite');
+    // Access the object store
+    const budgetObjectStore = transaction.objectStore('new_transaction');
+    // Get all transactions from teh store and set to a variable
+    const getAll = budgetObjectStore.getAll();
+
+    // If .getAll() is executed successfully then run this function
+    getAll.onsuccess = function(){
+        if(getAll.result.length > 0){
+            fetch('/api/transaction', {
+                method: 'POST',
+                body: JSON.stringify(getAll.result),
+                headers: {
+                    Accept: 'application/JSON, text/plain, */*',
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(serverResponse => {
+                if (serverResponse.message){
+                    throw new Error(serverResponse);
+                }
+                // Open another transaction with read/write permissions
+                const transaction = db.transaction(['new_transaction'], 'readwrite');
+                // Access the object store
+                const budgetObjectStore = transaction.objectStore('new_transaction');
+                // Remove all items in the object store
+                budgetObjectStore.clear();
+                alert('Transaction Uploaded');
+            })
+            .catch(err =>{
+                console.log(err);
+                alert('Something went wrong');
+            })
+        }
+    }
 }
