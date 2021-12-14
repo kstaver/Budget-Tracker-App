@@ -48,3 +48,19 @@ self.addEventListener('activate', function (e){
         })
     )
 });
+
+// Retrieve the data from the cache
+self.addEventListener('fetch', function (e) {
+    console.log('fetching data from cahce: ' + e.request.url);
+    e.respondWith(
+        caches.matche(e.request).then(function (request){
+            if(request){
+                console.log('returning data from cache: ' + e.request.url);
+                return request;
+            }else{
+                console.log('file is not in cache: ' + e.request.url);
+                return fetch(e.request);
+            }
+        })
+    )
+})
