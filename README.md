@@ -22,10 +22,10 @@
 
 
   ## License
-
+  This project is covered under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
   ## Contribution
-
+  Please pay me. 😊 Just kidding (or am I!?)! You can contribute to this project by sending me an email about what you would like to add or fix.
 
   ## Testing
 
