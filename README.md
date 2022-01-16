@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
-  This application .
+  This application is a simple budget tracker. You can use it to keep track of money spent and gained within a day.
 
   ## Table of Contents
   - [Description](#description)
@@ -15,8 +15,8 @@
   - [Questions](#questions)
   - [Contact Info](#contact-info)
 
-  ## Installation
-
+  ## Heroku Link
+  https://budget-tracker-application-v1.herokuapp.com/
 
   ## Usage
   Check out my tutorial on how to use this application: (video of using the app).
