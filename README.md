@@ -19,16 +19,13 @@
 
 
   ## Usage
-
+  Check out my tutorial on how to use this application: (video of using the app).
 
   ## License
   This project is covered under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
   ## Contribution
   Please pay me. 😊 Just kidding (or am I!?)! You can contribute to this project by sending me an email about what you would like to add or fix.
-
-  ## Testing
-
 
   ## Questions
   You can find the link to the application [here](https://github.com/kstaver/Budget-Tracker-App). If you have any questions pertaining to this application, please feel free to contact me.
