@@ -15,11 +15,11 @@
   - [Questions](#questions)
   - [Contact Info](#contact-info)
 
-  ## Heroku Link
-  https://budget-tracker-application-v1.herokuapp.com/
+  ## Installation
+  None involved! This application can be found on [Heroku](https://budget-tracker-application-v1.herokuapp.com/)
 
   ## Usage
-  Check out my tutorial on how to use this application: (video of using the app).
+  Check out my tutorial on how to use this application: [Budjet Tracker Application](https://youtu.be/gYdLlC8hS3g).
 
   ## License
   This project is covered under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
