@@ -16,7 +16,7 @@
   - [Contact Info](#contact-info)
 
   ## Installation
-  None involved! This application can be found on [Heroku](https://budget-tracker-application-v1.herokuapp.com/)
+  None involved! This application can be found on [Heroku](https://budget-tracker-application-v1.herokuapp.com/).
 
   ## Usage
   Check out my tutorial on how to use this application: [Budjet Tracker Application](https://youtu.be/gYdLlC8hS3g).
