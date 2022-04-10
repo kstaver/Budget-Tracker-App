@@ -4,6 +4,8 @@
 
   ## Description
   This application is a simple budget tracker. You can use it to keep track of money spent and gained within a day.
+  
+  ![image](https://user-images.githubusercontent.com/32945233/162601804-acf70d07-f3ee-45d0-9155-ac3e19233d5d.png)
 
   ## Table of Contents
   - [Description](#description)
